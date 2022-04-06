@@ -123,17 +123,20 @@
 }
 
 .our-latest-work-img-box li {
-  margin-left: 100px;
+  margin: 80px 0 0 100px;
 }
 
 .our-latest-work-img-box li:nth-of-type(3n+1) {
   margin-left: 0;
 }
 
-.our-latest-work-img-box li:nth-child(n+4) {
-  margin-top: 80px;
+.our-latest-work-img-box li:nth-child(-n+3) {
+  margin-top: 0;
 }
 
+.our-latest-work-img-box a {
+  display: inline-block;
+}
 
 .our-latest-work-img-box img {
   vertical-align: bottom;
@@ -272,13 +275,10 @@
 
   .our-latest-work-img-box li {
     margin-left: 0;
-  }
-
-  .our-latest-work-img-box li:nth-child(n+4) {
     margin-top: 0;
   }
 
-  .our-latest-work-img-box li:nth-of-type(3n) {
+  .our-latest-work-img-box li:nth-child(3n) {
     margin-bottom: 80px;
   }
 
@@ -314,5 +314,9 @@
   /* 767px以下に適用されるCSS（スマホ用） */
   .inner {
     width: 97%;
+  }
+
+  .sns-icons-box {
+    flex-flow: column;
   }
 }
