@@ -103,6 +103,10 @@
   font-size: 20px;
 }
 
+.our-latest-work {
+  background-color: #f2f2f2;
+}
+
 .our-latest-work-inner {
   padding: 60px 0 70px;
   text-align: center;
@@ -224,4 +228,43 @@
 .footer-text {
   color: #fff;
   float: right;
+}
+
+@media screen and (max-width: 1199px) {
+
+  /* 1199px以下に適用されるCSS（タブレット用） */
+  .inner {
+    width: 97%;
+  }
+
+  .what-we-can-do-inner {
+    flex-flow: column;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .what-we-can-do-text-box {
+    width: 100%;
+  }
+
+  .what-we-can-do-title {
+    margin-top: 20px;
+  }
+
+  .our-latest-work-img-box {
+    flex-flow: column;
+    gap: 0;
+  }
+
+  .our-latest-work-img-box li:nth-of-type(3n) {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* 767px以下に適用されるCSS（スマホ用） */
+  .inner {
+    width: 97%;
+  }
 }
