@@ -103,7 +103,8 @@
   font-size: 20px;
 }
 
-.our-latest-work {
+.our-latest-work,
+.sns {
   background-color: #f2f2f2;
 }
 
@@ -178,10 +179,6 @@
 .our-skills-img-box img {
   vertical-align: bottom;
   margin-bottom: 15px;
-}
-
-.sns {
-  background-color: #f2f2f2;
 }
 
 .sns-inner {
