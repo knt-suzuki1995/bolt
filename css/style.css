@@ -32,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .header-icon {
@@ -45,6 +46,10 @@
   background-color: #74cfae;
   text-decoration: none;
   transition: .3s;
+}
+
+.hamburger-box {
+  display: none;
 }
 
 .header-button:hover,
@@ -312,11 +317,54 @@
 @media screen and (max-width: 767px) {
 
   /* 767px以下に適用されるCSS（スマホ用） */
-  .inner {
-    width: 97%;
+
+  .title {
+    font-size: 80px;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .hamburger-box {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger-parts:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #ddd;
+    margin-bottom: 5px;
+  }
+
+  .hamburger-parts:last-child::after {
+    margin-bottom: 0;
+  }
+
+
+
+  .theme-inner {
+    padding: 160px 0 130px;
+  }
+
+  .sns-inner {
+    padding: 50px 15px;
+    box-sizing: border-box;
   }
 
   .sns-icons-box {
     flex-flow: column;
   }
+
+  .sns-icons-box li {
+    width: 100%;
+  }
+
+
 }
