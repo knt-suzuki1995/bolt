@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .body {
   font-family: Lato;
   font-size: 16px;
@@ -23,7 +25,7 @@
   position: fixed;
   width: 100%;
   background-color: #fff;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .header-inner {
@@ -60,16 +62,16 @@
 }
 
 .theme-inner {
-  padding: 250px 0 250px;
+  padding: 250px 0;
 }
 
 .bolt-theme-title {
   font-weight: 700;
-  margin-bottom: 20px;
   color: #74cfae;
 }
 
 .bolt-theme-sub-title {
+  margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -83,7 +85,6 @@
   color: #fff;
   display: flex;
   justify-content: flex-end;
-  gap: 0 150px;
 }
 
 .what-we-can-do-img {
@@ -91,6 +92,7 @@
 }
 
 .what-we-can-do-text-box {
+  margin-left: 150px;
   text-align: center;
   width: 650px;
 }
@@ -113,21 +115,29 @@
   text-align: center;
 }
 
-.our-latest-work-title {
-  margin-bottom: 40px;
-}
-
 .our-latest-work-img-box {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 80px 100px;
   flex-wrap: wrap;
 }
+
+.our-latest-work-img-box li {
+  margin-left: 100px;
+}
+
+.our-latest-work-img-box li:nth-of-type(3n+1) {
+  margin-left: 0;
+}
+
+.our-latest-work-img-box li:nth-child(n+4) {
+  margin-top: 80px;
+}
+
 
 .our-latest-work-img-box img {
   vertical-align: bottom;
   opacity: .7;
-  cursor: pointer;
   transition: .3s;
 }
 
@@ -140,7 +150,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 90px;
 }
 
 .our-latest-work-text {
@@ -148,9 +157,10 @@
 }
 
 .our-latest-work-button {
+  margin-left: 90px;
   text-decoration: none;
   font-size: 12px;
-  padding: 14px 12px;
+  padding: 14px 20px;
   color: #fff;
   background-color: #74cfae;
   transition: .3s;
@@ -166,19 +176,26 @@
   color: #fff;
 }
 
-.our-skills-title {
-  margin-bottom: 60px;
-}
-
 .our-skills-img-box {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
-  gap: 0 180px;
+}
+
+.our-skills-img-box li {
+  margin-left: 180px;
+}
+
+.our-skills-img-box li:first-child {
+  margin-left: 0;
 }
 
 .our-skills-img-box img {
   vertical-align: bottom;
-  margin-bottom: 15px;
+}
+
+.our-skills-img-box p {
+  margin-top: 15px;
 }
 
 .sns-inner {
@@ -242,6 +259,7 @@
 
   .what-we-can-do-text-box {
     width: 100%;
+    margin-left: 0;
   }
 
   .what-we-can-do-title {
@@ -250,11 +268,44 @@
 
   .our-latest-work-img-box {
     flex-flow: column;
-    gap: 0;
+  }
+
+  .our-latest-work-img-box li {
+    margin-left: 0;
+  }
+
+  .our-latest-work-img-box li:nth-child(n+4) {
+    margin-top: 0;
   }
 
   .our-latest-work-img-box li:nth-of-type(3n) {
     margin-bottom: 80px;
+  }
+
+  .our-latest-work-text-box {
+    margin-top: 0;
+    flex-flow: column;
+  }
+
+  .our-latest-work-text {
+    width: 100%;
+  }
+
+  .our-latest-work-button {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .our-skills-img-box {
+    flex-flow: column;
+  }
+
+  .our-skills-img-box li {
+    margin-left: 0;
+  }
+
+  .our-skills-img-box li:nth-child(n+2) {
+    margin-top: 88px;
   }
 }
 
