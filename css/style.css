@@ -309,8 +309,12 @@
     margin-left: 0;
   }
 
-  .our-skills-img-box li:nth-child(n+2) {
+  .our-skills-img-box li {
     margin-top: 88px;
+  }
+
+  .our-skills-img-box li:first-child {
+    margin-top: 0;
   }
 }
 
